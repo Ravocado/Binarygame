@@ -1,5 +1,5 @@
 import '../styles/Homepage.css';
-import Link, { LinkProps } from '../components/Link';
+import Link from '../components/Link';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
