@@ -8,7 +8,11 @@ export type VStackProps = {
   align?: 'left' | 'center' | 'right';
 };
 
-const VStack: React.FC<VStackProps> = ({ children, spacing = '1rem' , align = 'left'}) => {
+const VStack: React.FC<VStackProps> = ({
+  children,
+  spacing = '1rem',
+  align = 'left',
+}) => {
   return (
     <div className={`vertical-stack ${align}`} style={{ gap: spacing }}>
       {children}

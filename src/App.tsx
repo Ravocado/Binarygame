@@ -20,20 +20,25 @@ function App() {
   let page: React.ReactNode;
   switch (activeTab) {
     case WebsiteTab.HOME:
-      page = <Homepage/>;
+      page = <Homepage />;
       break;
     case WebsiteTab.COURSEWORK:
-      page = <Coursework/>;
+      page = <Coursework />;
       break;
     case WebsiteTab.PROJECTS:
-      page = <Projects/>;
+      page = <Projects />;
       break;
-    default: 
-      page = <Homepage/>;
+    default:
+      page = <Homepage />;
   }
   return (
     <>
-      <Header name="Ravi Jayaraman" tabs={tabs} setActiveTab={handleTabClick} activeTab={activeTab}/>
+      <Header
+        name="Ravi Jayaraman"
+        tabs={tabs}
+        setActiveTab={handleTabClick}
+        activeTab={activeTab}
+      />
       {page}
     </>
   );

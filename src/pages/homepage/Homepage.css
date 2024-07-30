@@ -12,11 +12,11 @@
 }
 
 .download-icon {
-  margin-left: 1rem; 
-  color: #9b9b9b; 
+  margin-left: 1rem;
+  color: #9b9b9b;
   transition: color 0.3s ease;
 }
 
 .download-icon:hover {
-  color: #0056b3; 
+  color: #0056b3;
 }

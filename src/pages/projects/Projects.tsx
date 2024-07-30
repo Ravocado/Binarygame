@@ -1,4 +1,4 @@
 const Projects = () => {
-    return <></>
-}
+  return <></>;
+};
 export default Projects;

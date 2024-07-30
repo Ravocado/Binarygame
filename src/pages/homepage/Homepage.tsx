@@ -1,5 +1,5 @@
 import './Homepage.css';
-import '../../styles/global.css'
+import '../../styles/global.css';
 import Link from '../../components/link/Link';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -19,22 +19,28 @@ const Homepage = () => {
       <VStack>
         <h1>About</h1>
         <div>
-          I'm a 4th year <a href={UVA_LINGO_LINK}>(Senior)</a> Computer Science and Math
-          student from the University of Virginia. You can find me reading
-          (come talk to me about Malazan), playing tennis / basically any
-          intermural sport that catches my interest, and playing probably too
-          many videogames. Yeah, I am also looking for a job I guess.
+          I'm a 4th year{' '}
+          <a href={UVA_LINGO_LINK} target="_blank">
+            (Senior)
+          </a>{' '}
+          Computer Science and Math student from the University of Virginia. You
+          can find me reading (come talk to me about Malazan), playing tennis /
+          basically any intermural sport that catches my interest, and playing
+          probably too many videogames. Yeah, I am also looking for a job I
+          guess.
         </div>
         <h1>Contact</h1>
         <VStack spacing="1px" align="left">
           <Link
             href={GITHUB_LINK}
             name="GitHub"
+            newTab={true}
             icon={<FontAwesomeIcon icon={faGithub} />}
           />
           <Link
             href={LINKEDIN_LINK}
             name="LinkedIn"
+            newTab={true}
             icon={<FontAwesomeIcon icon={faLinkedin} />}
           />
           <Link
