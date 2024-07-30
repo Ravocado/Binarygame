@@ -1,0 +1,22 @@
+.page-content {
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 1rem; /* Optional: Add some padding for better spacing */
+  max-width: 1000px;
+  min-width: 320px;
+  margin-top: 100px;
+}
+
+.resume-section {
+  display: flex;
+  align-items: center;
+}
+
+.download-icon {
+  margin-left: 1rem; 
+  color: #9b9b9b; 
+  transition: color 0.3s ease;
+}
+
+.download-icon:hover {
+  color: #0056b3; 
+}
