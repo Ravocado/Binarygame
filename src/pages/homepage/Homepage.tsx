@@ -19,36 +19,38 @@ const Homepage = () => {
       <VStack>
         <h1>About</h1>
         <div>
-          I'm a 4th year{' '}
+          I'm a{' '}
           <a href={UVA_LINGO_LINK} target="_blank">
-            (Senior)
+            4th year
           </a>{' '}
-          Computer Science and Math student from the University of Virginia. You
-          can find me reading (come talk to me about Malazan), playing tennis /
-          basically any intermural sport that catches my interest, and playing
-          probably too many videogames. Yeah, I am also looking for a job I
-          guess.
+          (I'm sorry) Computer Science and Math student from the University of
+          Virginia. You can find me reading (come talk to me about Malazan),
+          playing tennis / basically any intermural sport that catches my
+          interest, and playing probably too many videogames. Yeah, I am also
+          looking for a job I guess.
         </div>
         <h1>Contact</h1>
-        <VStack spacing="1px" align="left">
-          <Link
-            href={GITHUB_LINK}
-            name="GitHub"
-            newTab={true}
-            icon={<FontAwesomeIcon icon={faGithub} />}
-          />
-          <Link
-            href={LINKEDIN_LINK}
-            name="LinkedIn"
-            newTab={true}
-            icon={<FontAwesomeIcon icon={faLinkedin} />}
-          />
-          <Link
-            href={EMAIL_LINK}
-            name="spy7sw@virginia.edu"
-            icon={<FontAwesomeIcon icon={faEnvelope} />}
-          />
-        </VStack>
+        <div className="link-list">
+          <VStack spacing="1px" align="left">
+            <Link
+              href={GITHUB_LINK}
+              name="GitHub"
+              newTab={true}
+              icon={<FontAwesomeIcon icon={faGithub} />}
+            />
+            <Link
+              href={LINKEDIN_LINK}
+              name="LinkedIn"
+              newTab={true}
+              icon={<FontAwesomeIcon icon={faLinkedin} />}
+            />
+            <Link
+              href={EMAIL_LINK}
+              name="spy7sw@virginia.edu"
+              icon={<FontAwesomeIcon icon={faEnvelope} />}
+            />
+          </VStack>
+        </div>
         <div className="resume-section">
           <h1>Resume</h1>
           <a href={resume} target="_blank" className="download-icon">
