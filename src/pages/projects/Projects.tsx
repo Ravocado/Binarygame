@@ -8,18 +8,24 @@ const Projects = () => {
       <h1>Projects</h1>
       <ul>
         <li>
-          <Link name="SmartOH" href={`${GITHUB_BASE_URL}/ewei2406/SmartOH`} />
+          <Link
+            name="SmartOH"
+            href={`${GITHUB_BASE_URL}/ewei2406/SmartOH`}
+            newTab={true}
+          />
         </li>
         <li>
           <Link
             name="HoosWhere"
             href={`${GITHUB_BASE_URL}/ravijay301/HoosWhere`}
+            newTab={true}
           />
         </li>
         <li>
           <Link
             name="Markov Chain Calculator"
             href={`${GITHUB_BASE_URL}/ravijay301/MarkovChainCalculator`}
+            newTab={true}
           />
         </li>
       </ul>

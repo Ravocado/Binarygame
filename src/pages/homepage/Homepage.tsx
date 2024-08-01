@@ -12,6 +12,7 @@ const UVA_LINGO_LINK =
 const GITHUB_LINK = 'https://github.com/ravijay301';
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/ravi-jayaraman-/';
 const EMAIL_LINK = 'mailto:spy7sw@virginia.edu';
+const UVA_LINK = 'https://en.wikipedia.org/wiki/University_of_Virginia';
 
 const Homepage = () => {
   return (
@@ -23,11 +24,14 @@ const Homepage = () => {
           <a href={UVA_LINGO_LINK} target="_blank">
             4th year
           </a>{' '}
-          (I'm sorry) Computer Science and Math student from the University of
-          Virginia. You can find me reading (come talk to me about Malazan),
-          playing tennis / basically any intermural sport that catches my
-          interest, and playing probably too many videogames. Yeah, I am also
-          looking for a job I guess.
+          (I'm sorry) Computer Science and Math student from the{' '}
+          <a href={UVA_LINK} target="_blank">
+            University of Virginia
+          </a>
+          . You can find me reading (come talk to me about Malazan), playing
+          tennis / basically any intermural sport that catches my interest, and
+          playing probably too many videogames. Yeah, I am also looking for a
+          job I guess.
         </div>
         <h1>Contact</h1>
         <div className="link-list">

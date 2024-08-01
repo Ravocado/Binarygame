@@ -1,0 +1,11 @@
+.extra-text {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease-out,
+    padding 0.5s ease-out;
+}
+
+.extra-text.open {
+  max-height: 100px; /* Adjust this value according to your needs */
+}
