@@ -41,7 +41,6 @@ function App() {
         activeTab={activeTab}
       />
       {page}
-      <Footer text="hello world" />
     </>
   );
 }

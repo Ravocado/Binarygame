@@ -1,17 +1,9 @@
 import './Coursework.css';
 import '../../styles/global.css';
-import Togglecard from '../../components/togglecard/Togglecard.tsx';
-import Link from '../../components/link/Link.tsx';
 
 const CSCourses = [
   {
     name: 'CS 3100 Algorithms',
-    extraContent: (
-      <Link
-        name="CLRS"
-        href="https://en.wikipedia.org/wiki/Introduction_to_Algorithms"
-      />
-    ),
   },
   {
     name: 'CS 4501 Data Privacy',
@@ -34,6 +26,15 @@ const CSCourses = [
   {
     name: 'CS 6888 Software Analysis and Applications',
   },
+  {
+    name: 'CS 4730 Game Development',
+  },
+  {
+    name: 'CS 4610 Programming Languages',
+  },
+  {
+    name: 'CS 4414 Operating Systems',
+  },
 ];
 
 const MathCourses = [
@@ -54,19 +55,12 @@ const MathCourses = [
   },
   {
     name: 'MATH 4140 Mathematics of Derivative Securities',
-    extraContent: (
-      <Link
-        name="Hyperplane Separation Theorem"
-        href="https://en.wikipedia.org/wiki/Hyperplane_separation_theorem"
-      />
-    ),
   },
   {
     name: 'MATH 3310 Basic Real Analysis',
   },
   {
     name: 'MATH 4452 Algebraic Coding Theory',
-    extraContent: <div>They brought back polynomials 😥</div>,
   },
 ];
 
@@ -76,31 +70,13 @@ const Coursework = () => {
       <h1>Computer Science</h1>
       <ul>
         {CSCourses.map((course, index) => {
-          return (
-            <li key={index}>
-              {
-                <Togglecard
-                  cardName={course.name}
-                  extraContent={course.extraContent}
-                />
-              }
-            </li>
-          );
+          return <li key={index}>{course.name}</li>;
         })}
       </ul>
       <h1>Math</h1>
       <ul>
         {MathCourses.map((course, index) => {
-          return (
-            <li key={index}>
-              {
-                <Togglecard
-                  cardName={course.name}
-                  extraContent={course.extraContent}
-                />
-              }
-            </li>
-          );
+          return <li key={index}>{course.name}</li>;
         })}
       </ul>
     </div>

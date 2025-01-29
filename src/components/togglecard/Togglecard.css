@@ -1,11 +1,50 @@
-.extra-text {
-  max-height: 0;
-  overflow: hidden;
-  transition:
-    max-height 0.5s ease-out,
-    padding 0.5s ease-out;
+.toggle-card {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-.extra-text.open {
-  max-height: 100px; /* Adjust this value according to your needs */
+.card-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.card-name {
+  font-weight: bold;
+}
+
+.expand-link {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 12px; /* Made smaller */
+}
+
+.expand-link:hover {
+  text-decoration: underline;
+}
+
+.expanded-content {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc; /* Added border */
+  border-radius: 5px;
+}
+
+.expanded-content p {
+  margin: 12px;
+}
+.image-container {
+  display: flex; /* Puts images side by side */
+  gap: 10px; /* Adds space between images */
+  justify-content: top; /* Centers images */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.side-by-side-image {
+  max-width: 48%; /* Makes images fit side by side */
+  height: auto; /* Keeps aspect ratio */
+  object-fit: contain; /* Ensures image keeps its aspect ratio inside the container */
+  border-radius: 5px; /* Smooth corners */
 }

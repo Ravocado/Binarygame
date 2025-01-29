@@ -1,35 +1,26 @@
 import { useState } from 'react';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Togglecard.css';
+import './ToggleCard.css';
 
-type TogglecardProps = {
+type ToggleCardProps = {
   cardName: string;
-  extraContent?: React.ReactNode;
+  expandedContent: React.ReactNode;
 };
 
-const Togglecard = (props: TogglecardProps) => {
-  const { cardName, extraContent } = props;
+const ToggleCard = ({ cardName, expandedContent }: ToggleCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
+
   return (
-    <li className="course-item">
-      <span
-        onClick={toggleOpen}
-        style={{ cursor: 'pointer', userSelect: 'none' }}
-      >
-        {cardName}
-        {isOpen ? (
-          <FontAwesomeIcon icon={faMinus} />
-        ) : (
-          <FontAwesomeIcon icon={faPlus} />
-        )}
-      </span>
-      <div className={`extra-text ${isOpen ? 'open' : ''}`}>{extraContent}</div>
+    <li className="toggle-card">
+      <div className="card-header">
+        <span className="card-name">{cardName + ' '}</span>
+        <span className="expand-link" onClick={() => setIsOpen(!isOpen)}>
+          ({isOpen ? 'Collapse' : 'Expand'})
+        </span>
+      </div>
+
+      {isOpen && <div className="expanded-content">{expandedContent}</div>}
     </li>
   );
 };
 
-export default Togglecard;
+export default ToggleCard;

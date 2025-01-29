@@ -28,10 +28,8 @@ const Homepage = () => {
           <a href={UVA_LINK} target="_blank">
             University of Virginia
           </a>
-          . You can find me reading (come talk to me about Malazan), playing
-          tennis / basically any intermural sport that catches my interest, and
-          playing probably too many videogames. Yeah, I am also looking for a
-          job I guess.
+          . You can find me reading (come talk to me about Malazan) and playing
+          tennis / basically any intermural sport that catches my interest.
         </div>
         <h1>Contact</h1>
         <div className="link-list">
