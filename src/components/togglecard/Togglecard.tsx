@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import './ToggleCard.css';
+import './Togglecard.css';
 
 type ToggleCardProps = {
   cardName: string;
   expandedContent: React.ReactNode;
 };
 
-const ToggleCard = ({ cardName, expandedContent }: ToggleCardProps) => {
+const Togglecard = ({ cardName, expandedContent }: ToggleCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,4 +23,4 @@ const ToggleCard = ({ cardName, expandedContent }: ToggleCardProps) => {
   );
 };
 
-export default ToggleCard;
+export default Togglecard;

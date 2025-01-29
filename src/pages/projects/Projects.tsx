@@ -1,6 +1,6 @@
 import Link from '../../components/link/Link';
 import '../../styles/global.css';
-import ToggleCard from '../../components/togglecard/ToggleCard';
+import Togglecard from '../../components/togglecard/Togglecard.tsx';
 import ai_help_2 from '../../assets/SmartOH/ai_help_2.png';
 import join_filters from '../../assets/SmartOH/join_filters.png';
 import SwitchingToRecurrent from '../../assets/MarkovChainCalculator/SwitchingToRecurrent.png';
@@ -81,7 +81,7 @@ const Projects = () => {
       <ul>
         {ProjectList.map((project, i) => {
           return (
-            <ToggleCard
+            <Togglecard
               key={i}
               cardName={project.name}
               expandedContent={project.expandedContent}
