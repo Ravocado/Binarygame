@@ -2,7 +2,6 @@ import Header from './components/header/Header.tsx';
 import Homepage from './pages/homepage/Homepage.tsx';
 import Coursework from './pages/coursework/Coursework.tsx';
 import Projects from './pages/projects/Projects.tsx';
-import Footer from './components/footer/Footer.tsx';
 import { useState } from 'react';
 
 enum WebsiteTab {
